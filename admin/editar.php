@@ -33,8 +33,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $medico = obtener_medico_por_id($conexion, $id_medico);
     
-	if (!$post) {
-		header('Location: ' . RUTA . '/admin/index.php');
+	if (!$medico) {
+		header('Location: ' . RUTA . '/admin/administracion.php');
 	}
 	$medico = $medico[0];
 }

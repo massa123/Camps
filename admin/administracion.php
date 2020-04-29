@@ -12,6 +12,6 @@ if (!$conexion) {
     header('Location: ' . RUTA . '/error.php');
 }
  
-require '../views/admin_medicos.view.php';
+require '../views/administracion.view.php';
 
 ?>

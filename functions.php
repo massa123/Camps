@@ -34,7 +34,7 @@ function obtenerMedicos($conexion, $especialidad){
 
 function comprobarSession(){
     if ($_SESSION['admin'] != 'secretaria'){
-        header ('Location: ' . RUTA . '/index.php');
+        header ('Location: ' . RUTA . '/admin/login.php');
     }
 }
 

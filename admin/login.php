@@ -9,7 +9,7 @@
     
     if  ($user == $admin['username'] && $pass == $admin['password']) { 
       $_SESSION['admin'] = $admin['username'];
-      header('location: ' . RUTA . '/admin/admin_medicos.php');
+      header('location: ' . RUTA . '/admin/administracion.php');
     }
   }
 ?>

@@ -474,14 +474,14 @@ body{
 	padding: 7px;
 }
 .especialidad{
-	width: 100%;
+  width: 100%;
+  box-shadow: inset 0 -3px 10px 0 #CCC;
 }
 .separador{
 	background-color: #EEE;
   color: #3D3D3D;
   width: 100%;
   padding: 20px;
-  box-shadow: 0 0 5px #BABABA;
 }
 .wrapper_medicos{
   width: 1250px;
@@ -865,7 +865,7 @@ body{
     PAGINA ADMINISTRACION
   */
   .administracion{
-    box-shadow: 0 -2px 5px red;
+    box-shadow: 0 -2px 6px #CCC;
   }
   .administracion h2{
     font-weight: 600;
@@ -880,6 +880,15 @@ body{
   }
   .botones_panel a{
     margin: 0;
+  }
+  .editar_borrar{
+    width: 100%;
+    height: 40px;
+    background: #EEE;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   /*  Administración Medias  */
   @media only screen and (max-width: 800px){
@@ -900,5 +909,7 @@ body{
       grid-gap: 25px;
     }
   }
-  
+  /*
+    Nuevo y editar
+  */
   

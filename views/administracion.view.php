@@ -45,7 +45,14 @@
                   <p><?php echo $medico['especialidad'];?></p>
                   <p><?php echo $medico['horario de atencion'];?></p>
                 </div>
-                <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
+                <div class="editar_borrar">
+                  <form action="editar.php" method="get">
+                    <input type="submit"><i class="far fa-edit"><a href="editar.php?id=<?php echo $medico['id']; ?>"><?php echo $medico['nombre'] ?></i>
+                  </form>
+                  <form action="borrar.php" method="get">
+                    <input type="submit"><i class="fas fa-trash-alt"></a></i>
+                  </form>
+                </div>
               </div>
             <?php endforeach; ?>
           </div>
@@ -55,3 +62,4 @@
     <?php require '../views/footer.php'?>
   </body>
 </html>
+

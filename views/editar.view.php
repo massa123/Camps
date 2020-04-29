@@ -13,9 +13,9 @@
   </head>
   <body>
     <?php require 'header.php'?>
-    <section class="agregar">
+    <section class="form_editar">
       <form class="" method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>">
-        <input type="hidden" name="id" value="<?php echo $medico['id']; ?>">>
+        <input type="hidden" name="id" value="<?php echo $medico['id']; ?>">
         <input type="text" name="medico" value="<?php echo $medico['nombre']; ?>">
         <input type="text" name="especialidad" value="<?php echo $medico['especialidad']; ?>">
         <input type="text" name="horario" value="<?php echo $medico['horario de atencion']; ?>">
